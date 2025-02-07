@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>FitTrack</h1>
+        <h3>Your personal tracker for weight management and health goals.</h3>
+    </header>
+
+    <nav class="center">
+        <a href="/users/list-weights">View Your Weights</a>
+        <a href="/users/listing_page">Weight Log</a>
+        <a href="/Ajaxweight">Calculate Weight Loss</a>
+        <a href="/users/about-us">About Us</a>
+    </nav>
+    <h2 class="center">Welcome </h2>
+
+    <section>
+        <h3>Track Your Weight</h3>
+        <form action="/users/add-weight" method="POST">
+            <label for="weight">Enter your weight:</label>
+            <input type="number" name="weight" id="weight" placeholder="Your weight in kg" required><br><br>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    
+
+    <br>
+
+    <form action="/users/logout" method="GET">
+        <button type="submit" class="logout-button">Logout</button>
+    </form>
+    </section>
+    <div class="center">
+        <% if (message) { %>
+            <div class="message" style="color: red;">
+                <p><%= message %></p>
+            </div>
+        <% } %>
+    
+        <% if (error) { %>
+            <div class="error" style="color: red;">
+                <p><%= error %></p>
+            </div>
+        <% } %>        
+    </div>
+    
+</body>
+</html>

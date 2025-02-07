@@ -1,0 +1,83 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 20px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; /* Same font as in style.css */
+}
+
+/* Center the title */
+h1 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Center the list of weights */
+.center {
+    text-align: center; /* Center the text */
+}
+
+/* Styles for the weight list */
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    font-weight: bold;
+    margin: 10px 0; /* Space between each weight item */
+    background-color: #d9fad9; /* Light background color for each list item */
+    padding: 15px; /* Padding inside the list item */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+ul li:hover {
+    background-color: #faebe2; /* Change background on hover */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the links */
+    margin: 30px 0; /* Space above and below */
+}
+
+/* Styles for pagination links */
+nav a {
+    margin: 0 15px; /* Space between pagination links */
+    color: #ffffff; /* Green color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Padding around the links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #242924; /* Darker green background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Current page number style */
+nav span {
+    font-weight: bold; /* Bold current page number */
+    color: #4CAF50; /* Same green color for consistency */
+    padding: 5px 10px; /* Padding for the current page number */
+}
+
+/* Back link styles */
+a[href="/users/add-weight"] {
+    width: 30%; /* Set the width of the link */
+    display: block; /* Make back link a block element */
+    text-align: center; /* Center align text */
+    margin: 0px auto; /* Space above the back link and center it */
+    color: #4CAF50; /* Green color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding for the link */
+    border: 1px solid #4CAF50; /* Border for the back link */
+    border-radius: 5px; /* Rounded corners */
+}
+
+a[href="/users/add-weight"]:hover {
+    background-color: #45a049; /* Darker background on hover */
+    color: white; /* White text on hover */
+}

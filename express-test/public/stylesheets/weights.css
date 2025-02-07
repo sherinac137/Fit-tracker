@@ -1,0 +1,147 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Space around text */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+header h3 {
+    font-weight: 100;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    background-color: #333;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Increased padding for better touch targets */
+    margin: 0 5px; /* Space between links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    background-color: #272727;
+    color: #4CAF50; /* Change text color on hover */
+}
+
+/* Table Styles */
+table {
+    width: 90%; /* Full width */
+    margin: 20px auto; /* Center table */
+    border-collapse: collapse; /* Merge table borders */
+    background-color: white; /* White background for table */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+th, td {
+    padding: 12px; /* Space inside cells */
+    text-align: center; /* Center text */
+    border: 1px solid #ddd; /* Light border */
+}
+
+th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white; /* White text */
+}
+
+/* Button Styles */
+.edit-button, .delete-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 8px 12px; /* Space inside buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Message Styles */
+.alert {
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%; /* Center and limit width */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Hidden by default */
+}
+
+.alert-success {
+    background-color: #dff0d8; /* Light green background */
+    color: #3c763d; /* Dark green text */
+}
+
+.alert-danger {
+    background-color: #f2dede; /* Light red background */
+    color: #a94442; /* Dark red text */
+}
+
+/* Show messages */
+.alert-success.display, .alert-danger.display {
+    display: block; /* Show messages when applicable */
+}
+
+/* Center styles */
+.center {
+    text-align: center; /* Center text */
+}
+
+h2 {
+    text-align: center; /* Center the title */
+    color: #333; /* Darker text for contrast */
+}
+
+/* Link Styles */
+a {
+    display: inline-block; /* Inline block for spacing */
+    margin: 10px; /* Space around links */
+    text-decoration: none; /* Remove underline */
+    color: #4CAF50; /* Green text */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+/* No weights message styles */
+p {
+    text-align: center; /* Center no weights message */
+    color: #666; /* Gray text */
+    margin: 20px; /* Space around message */
+}
+
+a[href="/users/add-weight"] {
+    width: 30%; /* Set the width of the link */
+    display: block; /* Make back link a block element */
+    text-align: center; /* Center align text */
+    margin: 0 auto; /* Center the link */
+    color: #4CAF50; /* Green color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding for the link */
+    border: 1px solid #4CAF50; /* Border for the back link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+a[href="/users/add-weight"]:hover {
+    background-color: #45a049; /* Darker background on hover */
+    color: white; /* White text on hover */
+}

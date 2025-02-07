@@ -1,0 +1,119 @@
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fcf8f8;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h3 {
+    margin: 5px 0 0;
+    font-weight: 300;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro, .mission, .team {
+    text-align: left;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Team member styles */
+.team-member {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-member h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    color: #4CAF50;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #333;
+    color: white;
+  }
+  
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #272727;
+  }

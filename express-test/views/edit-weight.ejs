@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Weight</title>
+    <link rel="stylesheet" href="/stylesheets/addweight.css">
+    
+
+</head>
+<body>
+
+    <div class="container"> 
+        <section>
+            <h1>Edit Weight</h1>
+            <form action="/users/edit/<%= weight._id %>" method="POST">
+                <label for="weight">Weight (kg):</label><br>
+                <input type="number" id="weight" name="weight" value="<%= weight.weight %>" required><br><br>
+                <button type="submit">Update</button>
+            </form>
+        </section>
+
+        <a href="/users/list-weights" class="back-link">Back to List</a> <!-- Positioned outside the section -->
+    </div>
+
+</body>
+</html>

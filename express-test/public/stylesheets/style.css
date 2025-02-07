@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body {
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+/* Header Styles */
+header {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 20px; /* Space around text */
+  text-align: center; /* Center text */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  background-color: #333;
+  color: white;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #272727;
+}
+
+/* Welcome Message Styles */
+h2.center {
+  text-align: center; /* Center the welcome message */
+  color: #333; /* Darker text for contrast */
+}
+
+/* Section Styles */
+section {
+  background: white; /* White background for section */
+  padding: 20px; /* Space inside section */
+  margin: 20px; /* Space outside section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Styles */
+form {
+  margin: 10px 0; /* Space above and below forms */
+}
+
+label {
+  display: block; /* Labels on their own lines */
+  margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="number"] {
+  width: 70%; /* Full width for input */
+  padding: 10px; /* Space inside input */
+  margin-bottom: 15px; /* Space below input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Button Styles */
+.submit-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Space inside buttons */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Logout Button Styles */
+.logout-button {
+  background-color: red; /* Red background */
+  color: white; /* White text */
+  padding: 10px 30px; /* Space inside button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+  display: block; /* Make it a block element to center */
+  margin: 20px auto; /* Centering with margin */
+}
+
+.logout-button:hover {
+  background-color: darkred; /* Darker red on hover */
+}
+
+/* Message Styles */
+.center {
+  text-align: center; /* Center text */
+}
+
+.message, .error {
+  margin: 10px 0; /* Space above and below messages */
+  padding: 10px; /* Space inside messages */
+  border: 1px solid red; /* Red border for error messages */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f8d7da; /* Light red background for errors */
+  color: #721c24; /* Dark red text for errors */
+}

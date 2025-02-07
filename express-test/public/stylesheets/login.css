@@ -1,0 +1,82 @@
+/* login.css */
+
+/* Use the same font as in style.css */
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; /* Same font as in style.css */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+/* Center the form title */
+h1 {
+    text-align: center;
+}
+
+/* Styles for the login form container */
+.login-form-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    max-width: 600px; /* Increase the maximum width of the form */
+    margin: 0 auto; /* Center the form container */
+    padding: 30px; /* Increase padding around the form */
+    border: 1px solid #ccc; /* Optional: add a border */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    background-color: white; /* Optional: background color */
+}
+
+/* Input group styles */
+.input-group {
+    display: flex; /* Use flexbox for each input group */
+    justify-content: space-between; /* Space between label and input */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 15px; /* Space below each input group */
+}
+
+label {
+    width: 30%; /* Set label width */
+    margin-right: 10px; /* Space between label and input */
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="email"],
+input[type="password"] {
+    margin-top: 10px;
+    width: 70%; /* Allow inputs to take remaining space */
+    padding: 5px; /* Decrease padding to reduce height */
+    font-size: 15px; /* Set font size for input text */
+}
+
+/* Centering the button in a flex container */
+.button-container {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    margin-top: 10px; /* Optional: Space above the button */
+}
+
+/* Submit button styles */
+button[type="submit"] {
+    display: block;
+    width: 30%; /* Same width as inputs */
+    padding: 8px; /* Padding for the button */
+    margin: 10px; /* Space above the button */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker button color on hover */
+}
+
+/* Error and message styles */
+.error, .message {
+    color: red; /* Error text color */
+    text-align: center; /* Center align error messages */
+}

@@ -1,0 +1,73 @@
+/* Add Weight Page Styles */
+
+body {
+    padding: 20px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Center the form section */
+section {
+    max-width: 400px; /* Limit the width of the form section */
+    margin: 20px auto; /* Center the section */
+    padding: 20px; /* Padding inside the section */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styles for the input group */
+.input-group {
+    margin-bottom: 15px; /* Space below each input group */
+}
+
+/* Input field styles */
+input[type="number"] {
+    padding: 8px; /* Padding for comfort */
+    width: 70%; /* Full width */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Update button styles */
+button[type="submit"] {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    width: 30%; /* Full width */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker button color on hover */
+}
+
+/* Back link styles */
+a {
+    width: 10%; /* Set the width of the link */
+    display: block; /* Make back link a block element */
+    text-align: center; /* Center align text */
+    margin: 10px auto; /* Space above the back link and center it */
+    color: #4CAF50; /* Green color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding for the link */
+    border: 1px solid #4CAF50; /* Border for the back link */
+    border-radius: 5px; /* Rounded corners */
+}
+
+a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels for clarity */
+  }

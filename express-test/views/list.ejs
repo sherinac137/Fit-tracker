@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight List</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/list.css"> 
+</head>
+<body>
+    <header>
+        <h1 class="center">FitTrack</h1>
+    <h3>Your personal tracker for weight management and health goals.</h3>
+    </header>
+    <nav class="center">
+        <a href="/users/list-weights">View Your Weights</a>
+        <a href="/users/listing_page">Weight Log</a>
+        <a href="/users/about-us">About Us</a>
+    </nav>
+    <h2>Weight List</h2>
+
+    <div class="center2">
+        <ul>
+            <% weights.forEach(weight => { %>
+                <li>Weight: <%= weight.weight %> kg, Added on: <%= weight.date.toLocaleString() %></li>
+            <% }); %>
+        </ul>
+    </div>
+
+    <nav aria-label="Page navigation example" style="margin:auto;">
+        <% if (pagination.hasPrevPage) { %>
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page=<%= pagination.prevPage %>">&laquo; previous</a>
+        <% } %>
+
+        <% for (let page_number = 1; page_number <= pagination.totalPages; page_number++) { %>
+            <% if (pagination.page === page_number) { %>
+                <span><%= page_number %></span>
+            <% } else { %>
+                <a href="?page=<%= page_number %>"><%= page_number %></a>
+            <% } %>
+        <% } %>
+
+        <% if (pagination.hasNextPage) { %>
+            <a href="?page=<%= pagination.nextPage %>">next &raquo;</a>
+            <a href="?page=<%= pagination.totalPages %>">last &raquo;</a>
+        <% } %>
+    </nav><br> <br>
+    <a href="/users/add-weight">Back</a>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Weights</title>
+    <link rel="stylesheet" href="/stylesheets/weights.css">
+</head>
+<body>
+    <header>
+        <h1 class="center">FitTrack</h1>
+        <h3>Your personal tracker for weight management and health goals.</h3>
+    </header>
+    <nav class="center">
+        <a href="/users/list-weights">View Your Weights</a>
+        <a href="/users/listing_page">Weight Log</a>
+        <a href="/Ajaxweight">Calculate Weight Loss</a>
+        <a href="/users/about-us">About Us</a>
+    </nav>
+    <h2>Your Weights</h2>
+    
+    <% if (message) { %>
+        <div class="alert alert-success"><%= message %></div>
+    <% } %>
+    <% if (error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+
+    <% if (weights && weights.length > 0) { %>
+        <table>
+            <thead>
+                <tr>
+                    <th>Weight (kg)</th>
+                    <th>Date Added</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% weights.forEach(function(weight) { %>
+                    <tr>
+                        <td><%= weight.weight %></td>
+                        <td><%= weight.date.toLocaleString() %></td>
+                        <td>
+                            <form action="/users/edit/<%= weight._id %>" method="POST">
+                                <button type="submit" class="edit-button">Edit</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="/users/delete/<%= weight._id %>" method="POST">
+                                <button type="submit" class="delete-button" onclick="return confirmDelete();">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    <% } else { %>
+        <p>No weights recorded yet.</p>
+    <% } %>
+
+    <script>
+        function confirmDelete() {
+            return confirm("Are you sure you want to delete this weight?");
+        }
+    </script>
+    <a href="/users/add-weight">Back to List</a>
+</body>
+</html>

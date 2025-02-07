@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weight Loss Calculation</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/ajax.css"> <!-- Link to ajax.css -->
+    <script src="/javascripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="center">FitTrack</h1>
+        <h3>Your personal tracker for weight management and health goals.</h3>
+    </header>
+    
+    <nav class="center">
+        <a href="/users/list-weights">View Your Weights</a>
+        <a href="/users/listing_page">Weight Log</a>
+        <a href="/users/about-us">About Us</a>
+    </nav>
+
+    <div class="ajax-container">
+        <h1>Calculate Weight Loss</h1>
+        <form id="weightLossForm">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+            <br>
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+            <br>
+            <button type="submit" class="ajax-button">Calculate</button> <!-- Button styled for AJAX -->
+        </form>
+        <div id="result"></div> <!-- Placeholder for AJAX results -->
+      
+    </div><br><br>
+    <a href="/users/add-weight" class="ajax-button">Back to List</a> 
+</body>
+</html>
